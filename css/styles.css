@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+img{
+    max-width: 100%;
+}
+.contenedor-header{
+    background-image: url(../img/hotel.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+
+
+@media (min-width:500px){
+    .logo{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+
+.imagenLogo{
+    width: 7rem;
+    align-self: center;
+}
+.navegacion{
+   align-self: center;
+   
+    
+}
+
+.navegacion a{
+    padding: .9rem;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.navegacion a:hover{
+    color: rgb(105, 197, 169);
+    
+}
+
+.buscador{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    
+    margin-top: 15rem;
+    
+}
+
+.t-buscador{
+    
+    color: #ffffff;
+    
+    
+    
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-between;
+    height: 4.4rem;
+    width: 100%;
+}
+
+form input[type="text"]{
+    width: 100%;
+    height: 4.5rem;
+    border:none;
+    border-radius: 10px;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: calc(1% + 1rem) calc(1% + .8rem); /*Posiciono la lupa*/
+    padding-left: 5rem;
+    font-size: 1.6rem;
+}
+
+form input[type="submit"]{
+    
+    position: relative;
+    top: .2rem;
+    right: 8rem;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: .4rem 1.5rem;
+    background-color: rgb(49, 49, 177);
+}
+
+
+/*Que hacer*/
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:1rem;
+}
+
+.concierto{
+    color: rgb(65, 158, 130);
+    text-transform: uppercase;
+}
+
+.titulo{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+/*Mi viaje plus*/
+.premium{
+    background-image: url(../img/viaje_plus.jpg);
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.info-plus{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.premium .info-plus h3{
+    display: block;
+    text-align: center;
+    font-size: 2.2rem;
+    
+}
+
+.premium .info-plus .boton{
+    display: block;
+    padding: 1rem;
+    width: 12rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(65, 158, 130) ;
+    transition:  all .3s ease-in-out;
+    /*CSS matic*/
+    -webkit-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+    
+
+}
+
+
+.premium .info-plus .boton:hover{
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+/*Hospedaje*/
+.hospedaje{
+    text-transform: uppercase;
+    color: rgb(65, 158, 130);
+}
+
+.titulo-visitado{
+   
+    font-size: 1.8rem;
+    font-weight: 700;
+
+}
+
+.card-destino {
+    position: relative;
+   
+    
+}
+
+
+.card-destino .info{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: #ffffff;
+}
+
+
+/*Footer*/
+.footer{
+    background-color: rgb(65, 158, 130);
+    height: 30vh;
+}
+
+.nav-footer h3{
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding-bottom: 2rem;
+}
+
+
+.footer .contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr) );
+    grid-gap: 1rem;
+}
+
+
+
+.nav-footer .menu a{
+    display: block;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #000000;
+    color: #ffffff;
+}
+.sociales ul li {
+    margin-right: 1rem;
+}
+.sociales ul li:last-of-type {
+    margin-right: 0;
+}
+
+.sociales ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.sociales ul li{
+    list-style: none;
+}
+
+.sociales ul li i{
+    color: #ffffff;
+    font-size: 2rem;
+}
